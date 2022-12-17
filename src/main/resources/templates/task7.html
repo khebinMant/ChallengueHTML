@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+    <body>
+        <div class="topnav">
+            <a th:href="@{/}">Task 4</a>
+            <a th:href="@{/task5}">Task 5</a>
+            <a th:href="@{/task6}">Task 6</a>
+            <a th:href="@{/task7}">Task 7</a>
+            <a th:href="@{/task8}">Task 8</a>
+        </div>
+        <div class="content">
+            <h1 th:text="${title}"></h1>
+            <div>
+                <img style="width: 200px;" th:src="@{/images/mona-lisa.jpg}"/>
+                <p>The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci.</p>
+            </div>
+            <div>
+                <img style="width: 200px;" th:src="@{/images/salvator-mundi.jpg}"/>
+                <p>The Salvator Mundi was painted for King Louis XII of France</p>
+            </div>
+        </div>
+    </body>
+</html>
